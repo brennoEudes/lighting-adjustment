@@ -30,12 +30,10 @@ brightnessSlider.addEventListener("input", function () {
 
 // 3º função p/contrast slider
 contrastSlider.addEventListener("input", function () {
-    // JS escuta o elemento no HTML!
-    const contrast = this.value;
-  
-    colorPreview.style.filter = `contrast(${contrast}%)`;
-  
-    console.log(contrast);
-  });
+  // JS escuta o elemento no HTML!
+  const contrast = this.value;
 
+  colorPreview.style.filter = `contrast(${contrast}%)`;
 
+  console.log(contrast);
+});
