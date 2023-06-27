@@ -1,29 +1,54 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #242424;
-    color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  background-color: #242424;
+  color: #ffffff;
 
-    /* Tudo ao centro! */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* Tudo ao centro! */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-    width: 430px;
-    height: 932px;
-    background-color: #151515;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 55px;
+  width: 430px;
+  height: 932px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 55px;
 }
+
+span {
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center; /* Só por garantia de centralizar */
+}
+
+i {
+  font-size: 24px;
+}
+
+main .controls {
+  display: flex; /* alinha ao centro */
+  flex-direction: column;
+  align-items: center;
+  width: 321px;
+  height: 236px;
+  gap: 85px;
+}
+
+.hue .brightness .contrast {
+  display: flex; /* alinha ao centro */
+  align-items: center;
+  gap: 17px;
+} 
