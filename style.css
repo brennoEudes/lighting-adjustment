@@ -79,3 +79,11 @@ main .controls {
   red);
 }
 
+/* Selecione todo input do tipo type */
+input[type="range"] {
+    width: 281px;
+    height: 5px;
+    appearance: none; /* Esconde a aparência */
+    background-color: transparent; /* Permite a visualização da div que está por trás! */
+    
+}
