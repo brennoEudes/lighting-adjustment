@@ -6,12 +6,26 @@ const contrastSlider = document.getElementById("contrast-slider");
 
 // Funções para cada elemento
 
-colorSlider.addEventListener("input", function () { // JS escuta o elemento no HTML!
-    const hue = this.value; 
-    const color = `hsl(${hue}, 100%, 50%)`; // hue é a cor, 100% é o contraste e 50% é o brilho!
+// 1º função p/color slider
+colorSlider.addEventListener("input", function () {
+  // JS escuta o elemento no HTML!
+  const hue = this.value;
+  const color = `hsl(${hue}, 100%, 50%)`; // hue é a cor, 100% é o contraste e 50% é o brilho!
 
-    colorPreview.style.backgroundColor = color;
-    colorPreview.style.boxShadow = `0px 0px 53px 13px ${color}`;
+  colorPreview.style.backgroundColor = color;
+  colorPreview.style.boxShadow = `0px 0px 53px 13px ${color}`;
 
-    console.log (color, hue);
+  console.log(color, hue);
 });
+
+// 2º função p/brightness slider
+brightnessSlider.addEventListener("input", function () {
+  // JS escuta o elemento no HTML!
+  const brightness = this.value;
+
+  colorPreview.style.filter = `brightness(${brightness}%)`;
+
+  console.log(brightness);
+});
+
+
