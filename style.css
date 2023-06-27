@@ -47,8 +47,35 @@ main .controls {
   gap: 85px;
 }
 
-.hue .brightness .contrast {
+/* Coloca os itens lado a lado */
+.hue,
+.brightness,
+.contrast {
   display: flex; /* alinha ao centro */
   align-items: center;
   gap: 17px;
-} 
+}
+
+/* Cmd para acessar as divs pai* de cada componente */
+.hue > div,
+.brightness > div,
+.contrast > div {
+  display: flex;
+  align-items: center;
+  /*height: 5px; /* Inserindo altura na div e não no input */
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.hue > div {
+  /* CORES DO ARCO-ÍRIS */
+  background: linear-gradient(to right,
+  red,
+  yellow,
+  lime,
+  aqua,
+  blue,
+  magenta,
+  red);
+}
+
